@@ -1,0 +1,24 @@
+footer {
+  background-color: white;
+  padding: 4rem 0 2rem;
+  .footer-logo {
+    text-align: center;
+    img {
+      width: 100%;
+      @media screen and (min-width: 576px) {
+        width: 20rem;
+      }
+    }
+  }
+  .footer-visit,
+  .footer-call,
+  .footer-email {
+    margin: 1rem 0;
+    p {
+      margin: 0;
+    }
+  }
+  .footer-info {
+    line-height: 2rem;
+  }
+}

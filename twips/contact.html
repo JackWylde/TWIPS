@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" itemprop="description" content=""/>
+    <meta name="name" itemprop="name" content="http://www.twips.co.uk/">
+
+    <title>Contact | twips</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+<body>
+
+<div id="background-opacity" class="background-opacity"></div>
+
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <div class="nav-item">
+            <a href="/">
+                <img src="assets/img/logo.svg" class="nav-logo" alt="Logo">
+            </a>
+        </div>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="work.html">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="contact-header">
+    <div class="header-title">
+        Contact
+    </div>
+</header>
+
+<section id="contact-form">
+    <div class="container">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label>Your Name:</label>
+                    <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label>Email Address:</label>
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Your Comment:</label>
+                <textarea type="text" class="form-control" id="message" placeholder="Type your message here:"></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom w-100">Submit</button>
+        </form>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div id="map"></div>
+        <script>
+            function initMap() {
+                var marker = {lat: 54.570756, lng: -1.235223};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 14,
+                    center: marker
+                });
+                var marker = new google.maps.Marker({
+                    position: marker,
+                    map: map
+                });
+            }
+        </script>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-logo mb-5">
+            <img src="assets/img/logo.svg" class="nav-logo" alt="Logo">
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-4 text-center">
+                <div class="footer-email mx-auto">
+                    <h2>Email us:</h2>
+                    <p><a href="mailto:info@twips.co.uk" class="line">info@twips.co.uk</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-info text-center">
+            <ul class="list-inline">
+                <li class="list-inline-item">Copyright © 2018. Twips Ltd.
+                </li>
+                <li class="list-inline-item hidden-xs">-
+                </li>
+                <li class="list-inline-item">
+                    <a href="terms-and-privacy.html" class="line">Terms of Service & Privacy Policy</a>
+                </li>
+                <li class="list-inline-item hidden-xs">-
+                </li>
+                <li class="list-inline-item">
+                    <a href="cookie-policy.html" class="line">Cookie Policy</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCMMl0MkgWYX6kkqIN6E8j-KTeZFAwuBw&callback=initMap">
+</script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>

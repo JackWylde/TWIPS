@@ -1,0 +1,28 @@
+@mixin transition-all() {
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+
+@mixin background-cover() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@mixin heading-font {
+  font-family: 'Roboto Slab', serif;
+}
+
+@mixin body-font {
+  font-family: 'Roboto', serif;
+}
+
+@mixin shadow {
+  box-shadow: 0 1rem 4rem 0 rgba(0, 0, 0, 0.2);
+}
+
+@mixin shadow-small {
+  box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.1);
+}

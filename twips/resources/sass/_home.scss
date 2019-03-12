@@ -1,0 +1,71 @@
+.home-header {
+  margin-top: 66.6px;
+  width: 100%;
+  padding: 4rem 2rem 10rem;
+  position: relative;
+  overflow: hidden;
+  @media screen and (min-width: 768px) {
+    padding: 8rem 4rem 12rem;
+  }
+  .header-title {
+    position: relative;
+  }
+  video {
+    position: absolute;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  &:before {
+    content: '';
+    background-color: black;
+    opacity: 0.25;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.background {
+  background: url("../img/background.jpg");
+  background-repeat: repeat;
+}
+
+#intro {
+  position: relative;
+  margin-top: -6rem;
+}
+
+#work {
+  .work-container {
+    color: $text-color;
+    @include shadow-small;
+    @include transition-all;
+    h2 {
+      color: $text-color;
+    }
+    &:hover {
+      @include shadow;
+    }
+  }
+}
+
+#blog {
+  .blog-container {
+    color: $text-color;
+    margin-bottom: 2rem;
+    @include shadow-small;
+    @include transition-all;
+    h2 {
+      color: $text-color;
+    }
+    &:hover {
+      @include shadow;
+    }
+  }
+}
